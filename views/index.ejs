@@ -5,10 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo Chat</title>
     <script src="/jquery-3.5.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="/scripts.js" defer></script>
     <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    Hello
+    <div id="wrapper">
+
+        <div id="loginForm">
+            <h3>What your name???</h3>
+            <input type="text" id="txtUsername">
+            <input type="button" value="Register" id="btnRegister">
+        </div>
+
+        <div id="chatForm">
+            <div id="left">
+                <div id="boxTitle">Users Online</div>
+                <div id="boxContent">
+                    <div class="useronline">Megan Fox</div>
+                    <div class="useronline">Megan Fox</div>
+                    <div class="useronline">Megan Fox</div>
+                    <div class="useronline">Megan Fox</div>
+                    <div class="useronline">Megan Fox</div>
+                </div>
+            </div>
+
+            <div id="right">
+                <div id="sayHi">
+                    Hello, <span id="currentUser">Megan Fox</span>
+                    <input type="button" id="btnLogout" value="Logout">
+                </div>
+
+                <div id="listMessages">
+                </div>
+
+                <input type="text" id="txtMessage">
+                <input type="button" id="btnSendMessage" value="Send"> 
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

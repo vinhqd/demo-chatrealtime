@@ -1,3 +1,81 @@
+*{
+    box-sizing: inherit;
+}
+
 body {
-    background-color: red;
+    background-color: #ebeef4;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 600px;
+    margin: auto;
+}
+
+#txtUsername {
+    background-color: transparent;
+    border-width: 0 0 1px 0;
+    outline: none;
+}
+
+#btnRegister {
+    outline: none;
+}
+
+#chatForm {
+    margin-top: 20px;
+}
+
+#left, #right {
+    min-height: 300px;
+}
+
+#left {
+    width: 28%;
+    float: left;
+    background-color: #f0f2d0;
+    padding: 5px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+#right {
+    width: 68%;
+    float: right;
+    background-color: #d4f9f8;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#boxTitle {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #999;
+    font-size: 20px;
+}
+
+#boxContent {
+    margin-top: 12px;
+    padding: 0 5px;
+}
+.useronline {
+    margin-bottom: 8px;
+}
+
+#sayHi {
+    text-align: right;
+}
+
+#listMessages {
+    height: 200px;
+    background-color: #fcead4;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+#txtMessage {
+    background-color: transparent;
+    border: solid 1px black;
+    outline: none;
 }
