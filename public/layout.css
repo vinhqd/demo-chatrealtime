@@ -72,6 +72,7 @@ body {
     background-color: #fcead4;
     margin-top: 12px;
     margin-bottom: 15px;
+    overflow: scroll;
 }
 
 #txtMessage {
