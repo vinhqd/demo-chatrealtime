@@ -26,6 +26,19 @@ io.on('connection', (socket) => {
     socket.on('logout', () => {
         users.splice(users.indexOf(socket.userName), 1);
         socket.broadcast.emit('server-send-users', users)
+    });
+
+    socket.on('user-send-message', (data) => {
+        io.sockets.emit('server-send-message', {un: socket.userName, nd: data})
+    });
+
+    socket.on('toi-dang-go-chu', () => {
+        let s = socket.userName + ' dang go chu...';
+        socket.broadcast.emit('ai-do-dang-go-chu', s);
+    });
+
+    socket.on('toi-stop-go-chu', () => {
+        socket.broadcast.emit('ai-do-stop-go-chu');
     })
 });
 

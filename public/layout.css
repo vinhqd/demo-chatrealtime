@@ -73,10 +73,41 @@ body {
     margin-top: 12px;
     margin-bottom: 15px;
     overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
 }
 
 #txtMessage {
     background-color: transparent;
     border: solid 1px black;
     outline: none;
+}
+
+.message-item-right, .message-item-left {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.message-item-right span, .message-item-left span {
+    border: 1px solid #DDD;
+    border-radius: 50px;
+    margin-bottom: 8px;
+    padding: 4px 12px;
+    max-width: 80%;
+}
+
+.message-item-left span {
+    background-color: blue;
+    color: white;
+}
+
+.message-item-right {
+    justify-content: flex-end;
+}
+
+.message-item-right span {
+    background-color: white;
+    color: black;
 }
